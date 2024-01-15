@@ -23,7 +23,9 @@ class AppSize {
   static const kWidth10 = SizedBox(
     width: 10,
   );
-
+  static const kWidth15 = SizedBox(
+    width: 15,
+  );
   static const kWidth20 = SizedBox(
     width: 20,
   );

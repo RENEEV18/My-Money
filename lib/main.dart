@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:money_manager_app/controller/bottom_nav_controller/bottom_nav_controller.dart';
+import 'package:money_manager_app/controller/home_controller/home_controller.dart';
 import 'package:money_manager_app/controller/splash_controller/splash_controller.dart';
 import 'package:money_manager_app/view/splash_screen/splash_screen.dart';
 import 'package:provider/provider.dart';
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => BottomNavController(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => HomeController(),
         ),
       ],
       child: MaterialApp(
